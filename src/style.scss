@@ -88,7 +88,7 @@
 
 .home {
   background-color: #a7bcff;
-  height: 98vh;
+  height: 97vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@
     border: 1px solid white;
     border-radius: 10px;
     width: 65%;
-    height: 80%;
+    height: 90%;
     display: flex;
     overflow: hidden;
     @include tablet {
@@ -131,8 +131,8 @@
 
           img {
             background-color: #ddddf7;
-            height: 24px;
-            width: 24px;
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
             object-fit: cover;
           }
