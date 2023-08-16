@@ -71,17 +71,24 @@ const Input = () => {
     setText("");
     setImg(null);
   };
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevents the Enter key from adding a new line
+      handleSend();
+    }
+  };
+
   return (
     <div className="input">
       <input
         type="text"
         placeholder="Type something..."
         onChange={(e) => setText(e.target.value)}
+        onKeyPress={handleKeyPress} // Attach the key press handler
         value={text}
       />
       <div className="send">
         {/* <img src={Attach} alt="" /> */}
-
         <input
           type="file"
           style={{ display: "none" }}
@@ -96,5 +103,4 @@ const Input = () => {
     </div>
   );
 };
-
 export default Input;
